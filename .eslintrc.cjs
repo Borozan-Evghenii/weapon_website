@@ -6,7 +6,8 @@ module.exports = {
     'plugin:@next/next/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier'
+    'prettier',
+    'plugin:storybook/recommended'
   ],
   env: {
     browser: true,
@@ -56,7 +57,7 @@ module.exports = {
     'no-param-reassign': 0,
     'no-restricted-syntax': 0,
     '@typescript-eslint/no-loop-func': 0,
-    'sort-keys': [1, 'asc', { natural: true, allowLineSeparatedGroups: true }],
+    // 'sort-keys': [1, 'asc', { natural: true, allowLineSeparatedGroups: true }],
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'react/jsx-sort-props': [
       2,
