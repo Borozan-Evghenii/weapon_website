@@ -1,2 +1,4 @@
 postcss.config.js
 tailwind.config.ts
+.storybook
+/src/components/stories/**
