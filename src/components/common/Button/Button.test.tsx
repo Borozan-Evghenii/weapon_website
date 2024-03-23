@@ -1,15 +1,17 @@
-import { describe, test, expect } from '@jest/globals';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
-import { Button } from '@/components';
+import type { ButtonProps } from '@/components';
+import { Button, BUTTON_TEST_IDS } from '@/components';
+
+const buttonProps = {
+  children: 'купить за 190 000'
+} satisfies ButtonProps;
 
 describe('Button component', () => {
   test('renders children correctly', () => {
-    const childrenText = 'Click me';
-
-    const { getByText } = render(<Button>{childrenText}</Button>);
-
-    const buttonChildren = getByText(childrenText);
-    expect(buttonChildren).toBe(childrenText);
+    render(<Button>{buttonProps.children}</Button>);
+    const children = screen.getByTestId(BUTTON_TEST_IDS.CHILDREN);
+    expect(children).toHaveTextContent(buttonProps.children);
   });
 });
