@@ -11,6 +11,15 @@ const config: Config = {
       colors: {
         primary: '#212121',
         borderColor: '#f9f9f9'
+      },
+      fontSize: {
+        '60': '60px',
+        '40': '40px',
+        '37': '37px',
+        '18': '18px',
+        '15': '15px',
+        '14': '14px',
+        '12': '12px'
       }
     }
   },

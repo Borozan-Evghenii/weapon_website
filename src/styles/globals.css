@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply text-60 uppercase tracking-tighter;
+  }
+  h2 {
+    @apply text-40 uppercase tracking-tighter;
+  }
+  h3 {
+    @apply text-37 uppercase tracking-tighter;
+  }
+  h4 {
+    @apply text-18 uppercase tracking-tighter;
+  }
+  .text1 {
+    @apply text-14 uppercase tracking-tighter;
+  }
+  .text2 {
+    @apply text-15 uppercase tracking-tighter;
+  }
+  .text3 {
+    @apply text-12 tracking-tighter;
+  }
+}

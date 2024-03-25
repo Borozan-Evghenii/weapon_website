@@ -5,7 +5,7 @@ import type { ButtonProps } from '@/components';
 import { Button, BUTTON_TEST_IDS } from '@/components';
 
 const buttonProps = {
-  children: 'купить за 190 000'
+  children: 'пистолет травматический risen /10x28 mm/5,5" - 136 mm'
 } satisfies ButtonProps;
 
 describe('Button component', () => {
