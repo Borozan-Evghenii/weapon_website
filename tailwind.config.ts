@@ -10,7 +10,14 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#212121',
-        borderColor: '#f9f9f9'
+        whiteSmoke: '#f9f9f9',
+        lightGray: '#999999',
+        darkGray: '#333333',
+        black: '#000'
+      },
+      borderRadius: {
+        '10': '10px',
+        '20': '20px'
       },
       fontSize: {
         '60': '60px',
